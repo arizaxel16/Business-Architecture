@@ -17,6 +17,8 @@ Los servicios adicionales incluyen:
 - **Báscula de tamizaje** desconectada de la red, con registro manual en Excel.
 - **Spotify**, utilizado en los computadores para reproducir música en los parlantes del CAF.
 - **Canva**, usado ocasionalmente por empleados para elaborar presentaciones corporativas o administrativas bajo demanda.
+- **SharePoint**, utilizado de manera esporádica como repositorio compartido de documentos internos.
+- **Power BI**, usado ocasionalmente para generar reportes simples cuando se requiere consolidar información de uso del CAF.
 
 El CAF depende completamente de la infraestructura central de TI de la universidad, sin contar con recursos dedicados propios.
 
@@ -45,8 +47,10 @@ El CAF depende completamente de la infraestructura central de TI de la universid
    - No hay integración con bases de datos, CRM o sistemas de reservas.
 
 6. **Sistemas desconectados sin integración con la operación principal**
-   - Spotify, aunque útil para la experiencia de usuario, no está integrado en la arquitectura de TI.
-   - Canva se utiliza de manera aislada, sin un flujo estandarizado dentro de los procesos administrativos.
+   - **Spotify**: aunque útil para la experiencia de usuario, no está integrado en la arquitectura de TI.
+   - **Canva**: se utiliza de manera aislada, sin un flujo estandarizado dentro de los procesos administrativos.
+   - **SharePoint**: usado como repositorio aislado, sin integración con los procesos de registro ni datos principales.
+   - **Power BI**: utilizado solo bajo demanda, sin integración directa con los Excels ni procesos del CAF.
 
 ---
 
@@ -59,7 +63,7 @@ Su arquitectura es **on-premise dependiente**, con dos PCs y almacenamiento loca
 - **Escalabilidad:** Nula, ya que los Excels no soportan múltiples usuarios concurrentes ni trazabilidad robusta.
 - **Seguridad:** Limitada, pues no hay control de accesos digitales ni políticas de respaldo.
 - **Disponibilidad:** Dependiente de la red universitaria; en caso de falla de red o del PC, las operaciones se detienen.
-- **Flexibilidad:** Los sistemas desconectados (Spotify, Canva, báscula) funcionan de manera aislada y no aportan a la gestión centralizada de información.
+- **Flexibilidad:** Los sistemas desconectados (Spotify, Canva, SharePoint, Power BI, báscula) funcionan de manera aislada y no aportan a la gestión centralizada de información.
 
 ---
 
@@ -79,6 +83,8 @@ Para superar las limitaciones actuales, se recomiendan **buenas prácticas** ins
 ### 4.3. Procesos y Automatización
 - Reemplazar Excels con un **sistema de gestión ligero (ERP/CRM básico o SaaS especializado en gimnasios/centros deportivos)**.
 - Integrar la báscula con un software que registre automáticamente los resultados.
+- Estandarizar el uso de **SharePoint** como repositorio único y formal.
+- Conectar **Power BI** con fuentes de datos unificadas para generar reportes periódicos y no solo bajo demanda.
 
 ### 4.4. Seguridad
 - Aplicar **controles de acceso digital** (perfiles de usuario para administrativos).
@@ -92,6 +98,6 @@ El CAF opera actualmente con un esquema simple y manual, adecuado solo para baja
 
 La transición hacia un modelo **híbrido (on-premise + cloud)** con almacenamiento centralizado, respaldo automático y herramientas digitales ligeras permitiría mejorar la eficiencia, reducir errores humanos y aumentar la confiabilidad de los datos.
 
-Los sistemas desconectados como **Spotify** y **Canva** aportan valor al ambiente y comunicación del CAF, pero deberían incluirse en la documentación de infraestructura como **soportes auxiliares no críticos**, reforzando la visión integral de la arquitectura tecnológica.
+Los sistemas desconectados como **Spotify, Canva, SharePoint y Power BI** aportan valor en términos de experiencia y comunicación, pero deberían documentarse como **soportes auxiliares no críticos**, reforzando la visión integral de la arquitectura tecnológica del CAF.
 
 ---
