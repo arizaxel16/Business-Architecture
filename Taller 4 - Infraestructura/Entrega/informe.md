@@ -1,4 +1,9 @@
 # Informe Técnico – Diagnóstico de Infraestructura del CAF (Centro de Acondicionamiento Físico)
+**Integrantes**
+- Juan pablo Corral
+- Felipe Camargo
+- Axel Ariza
+
 
 ## 1. Contexto General
 
