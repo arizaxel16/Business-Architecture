@@ -1,11 +1,11 @@
 # Informe de Análisis de Seguridad para el CAF
 
 ## 1. Introducción y Resumen Ejecutivo
-Este informe presenta los resultados de un análisis de seguridad realizado sobre los procesos operativos críticos del Centro de Acondicionamiento Físico (CAF) de la Universidad de La Sabana. La evaluación se llevó a cabo utilizando el modelo de amenazas **STRIDE** (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege) para identificar vulnerabilidades en los flujos de trabajo actuales.
+Los hallazgos de un estudio de seguridad efectuado en los procesos operativos fundamentales del Centro de Acondicionamiento Físico (CAF) de la Universidad de La Sabana se exponen en este informe. Para detectar debilidades en los flujos de trabajo actuales, se realizó la evaluación con el modelo de amenazas **STRIDE** (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service y Elevation of Privilege).
 
-El diagnóstico general revela que la alta dependencia de procesos manuales y el uso de herramientas de ofimática de propósito general (Microsoft Forms, Excel, SharePoint) para gestionar operaciones críticas introducen riesgos de seguridad significativos en todas las categorías.  
+El diagnóstico general muestra que el empleo de herramientas de ofimática de uso general (Microsoft Forms, Excel, SharePoint) y la excesiva dependencia de procesos manuales para administrar operaciones esenciales conllevan riesgos importantes en términos de seguridad en todas las categorías. 
 
-Las amenazas identificadas van desde la suplantación de identidad y la alteración de datos hasta la exposición de información personal y la interrupción del servicio. Se concluye que el modelo operativo actual es frágil y no cumple con las buenas prácticas de seguridad para un servicio de esta naturaleza.
+Las amenazas detectadas abarcan desde la sustitución de identidad y la manipulación de datos hasta la divulgación de información privada y el cese del servicio. Se determina que el modelo operativo en curso es débil y no se ajusta a las prácticas de seguridad adecuadas para un servicio de este tipo.
 
 ---
 
@@ -25,22 +25,22 @@ Las amenazas identificadas van desde la suplantación de identidad y la alteraci
 El análisis STRIDE se aplicó a cuatro flujos de trabajo fundamentales del CAF, revelando un patrón de vulnerabilidades sistémicas.
 
 ### 3.1 Flujo de Registro (Entrada y Salida)
-- La integridad de los datos de asistencia está comprometida.  
-- La transferencia manual de datos desde Forms al Excel Maestro es un punto crítico de **Tampering**.  
-- La falta de una autenticación robusta facilita el **Spoofing**.  
-- La ausencia de un registro de auditoría inmutable abre la puerta a amenazas de **Repudiation**.  
-- El almacenamiento en Excel, un sistema no diseñado para concurrencia, presenta un riesgo de **Denial of Service** por bloqueos de archivo.  
+- La integridad de los datos relacionados con la asistencia está en peligro.  
+- Un aspecto crítico de **Tampering** es la transferencia manual de datos desde Forms hacia el Excel Maestro.  
+- La ausencia de una autenticación sólida favorece el **spoofing**.  
+- La falta de un registro de auditoría inalterable facilita que ocurran amenazas de **Repudiation**.  
+- El almacenamiento en Excel, una plataforma no creada para ser utilizada de manera concurrente, tiene un peligro de **Denial of Service** debido a bloqueos de archivo.  
 
 ### 3.2 Flujo de Uso de Lockers
-- Este proceso, basado en llaves físicas, es inherentemente inseguro.  
-- Las llaves pueden ser duplicadas (**Tampering**) o entregadas sin una validación de identidad adecuada (**Spoofing** y **Elevation of Privilege**).  
-- El principal riesgo es la seguridad física de las pertenencias de los usuarios.  
+- Este procedimiento, que se fundamenta en llaves físicas, es intrínsecamente inseguro.  
+- Las llaves pueden ser replicadas (**Tampering**) o entregadas sin la verificación apropiada de identidad (**spoofing** y **Elevation of Privilege**).  
+- La seguridad física de los objetos de los usuarios es el mayor riesgo.  
 
 ### 3.3 Flujo de Entrenamiento
-- Este es el flujo con mayor riesgo de privacidad y seguridad física.  
-- La gestión de rutinas en "papel y memoria" impide cualquier trazabilidad (**Repudiation**).  
-- Se exponen datos potencialmente sensibles sobre la salud de los usuarios (**Information Disclosure**).  
-- No existen garantías contra la suplantación de identidad de entrenadores (**Spoofing**), lo que podría derivar en lesiones.  
+- Este flujo tiene el riesgo más alto en términos de seguridad física y privacidad.  
+- La administración de rutinas en "papel y memoria" imposibilita la trazabilidad (**Repudiation**).  
+- Se muestra información que podría ser delicada acerca de la salud de los usuarios (**Divulgación de información**).  
+- No hay garantías para evitar la suplantación de identidad de entrenadores (**Spoofing**), lo que podría resultar en lesiones.  
 
 ---
 
