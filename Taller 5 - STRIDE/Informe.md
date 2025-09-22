@@ -1,11 +1,11 @@
 # Informe de Análisis de Seguridad para el CAF
 
 ## 1. Introducción y Resumen Ejecutivo
-Los hallazgos del estudio de seguridad hechos en los procesos operativos fundamentales del Centro de Acondicionamiento Físico (CAF) de la Universidad de La Sabana se presentan en este informe. Para detectar debilidades en los flujos de trabajo actuales, se realizó la evaluación con el modelo de amenazas **STRIDE** (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service y Elevation of Privilege).
+Este informe proporciona los resultados de un estudio de seguridad realizado en el proceso básico (CAF) del Centro de acondicionamiento físico (CAF). Para determinar la debilidad actual del flujo de trabajo, la evaluación se realizó con un modelo de amenaza de pasos (falsificación, manipulación, rechazo, información sobre información, rechazo de servicios y mayores privilegios). 
 
-El diagnóstico general muestra que el empleo de herramientas de ofimática de uso general (Microsoft Forms, Excel, SharePoint) y la excesiva dependencia de procesos manuales para administrar operaciones esenciales conllevan riesgos importantes en términos de seguridad en todas las categorías. 
+El diagnóstico general muestra que la herramienta de oficina general (formularios de Microsoft, Excel, SharePoint) y el uso excesivo de procesos manuales para manejar una cirugía significativa se asocia con riesgos importantes en todas las categorías.
 
-Las amenazas detectadas abarcan desde la sustitución de identidad y la manipulación de datos hasta la divulgación de información privada y el cese del servicio. Se determina que el modelo operativo en curso es débil y no se ajusta a las prácticas de seguridad adecuadas para un servicio de este tipo.
+La amenaza reveló el recubrimiento, reemplazando la identidad de datos y el procesamiento para distribuir información privada y terminación del servicio. El modelo operativo actual es débil y no cumple con las prácticas de seguridad apropiadas para dichos servicios.
 
 ---
 
