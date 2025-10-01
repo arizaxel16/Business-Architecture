@@ -48,16 +48,3 @@
 | **E – Elevation of Privilege** | Un usuario actúa como entrenador para dar instrucciones. | Riesgo físico a otros usuarios.                      | Validación visual y protocolos de supervisión.     |
 
 ---
-
-## 📌 Flujo 4: Registro de salida del usuario  
-
-### Tabla STRIDE  
-
-| Amenaza (STRIDE)               | Ejemplo en el Flujo                                   | Posible Impacto                                      | Estrategias de Mitigación                         |
-|--------------------------------|-------------------------------------------------------|------------------------------------------------------|---------------------------------------------------|
-| **S – Spoofing**               | Otro estudiante registra la salida por un usuario.    | Datos inconsistentes en control de asistencia.       | Validación con cédula o carnet en salida.         |
-| **T – Tampering**              | Alteración manual en el Excel Maestro para “marcar” salida inexistente. | Inconsistencias en reportes.                        | Bloquear edición libre y usar macros de validación.|
-| **R – Repudiation**            | Usuario niega no haber registrado su salida.          | Dificultad para rastrear permanencia.                | Firma digital o sello de tiempo en registro.      |
-| **I – Information Disclosure** | Acceso no autorizado al historial de asistencia.       | Pérdida de privacidad de datos académicos/deportivos.| Control de accesos y cifrado en OneDrive.         |
-| **D – DoS**                    | Sobrecarga en el Excel Maestro (bloqueos de archivo). | Registro de salidas se interrumpe.                   | Uso de base de datos ligera en vez de Excel.      |
-| **E – Elevation of Privilege** | Usuario común obtiene acceso de edición al Excel Maestro. | Manipulación de múltiples registros.                | Roles diferenciados en SharePoint con auditoría.  |
