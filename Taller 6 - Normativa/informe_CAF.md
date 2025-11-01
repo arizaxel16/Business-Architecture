@@ -1,7 +1,7 @@
 # 🛠️ Taller 6 – Checklist de Cumplimiento Normativo  
 ### Cliente: Centro de Acondicionamiento Físico (CAF) – Universidad de La Sabana  
-**Equipo:** [Nombre del equipo]  
-**Fecha:** [dd/mm/aaaa]  
+**Equipo:** Gurpo 9  
+**Fecha:** 1/11/2025  
 **Curso:** Arquitectura Empresarial – AREM  
 **Asistente Virtual:** AEVA  
 
