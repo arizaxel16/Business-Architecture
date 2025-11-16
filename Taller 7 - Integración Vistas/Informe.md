@@ -1,7 +1,7 @@
 # Informe Final de Arquitectura: Transformación Digital del CAF
 
 **Equipo:** Domus (Axel Ariza, Andrés Felipe Camargo y Juan Pablo Corral)
-**Fecha:** 14 de Noviembre de 2025
+**Fecha:** 15 de Noviembre de 2025
 **Materia:** Arquitectura de Negocios
 
 ---
@@ -10,7 +10,7 @@
 
 Este documento presenta la propuesta de arquitectura TO-BE (futura) para el Centro de Acondicionamiento Físico (CAF) de la Universidad de La Sabana. El objetivo es resolver las ineficiencias operativas, la falta de datos fiables y la experiencia de usuario deficiente identificadas en el análisis AS-IS.
 
-La solución propuesta migra al CAF de un sistema manual basado en Excel y papel a un ecosistema digital ágil, integrado en Microsoft Teams y soportado por Power Platform. Esta arquitectura no solo automatiza los procesos clave, sino que alinea la operación tecnológica directamente con los objetivos estratégicos del negocio, creando una base sólida para la medición y el crecimiento futuro.
+La solución propuesta migra al CAF de un sistema manual basado en Excel y papel a un ecosistema digital ágil, integrado en Microsoft Teams y soportado por Power Platform. Esta arquitectura no solo automatiza los procesos clave, sino que se alinea la operación tecnológica directamente con los objetivos estratégicos del negocio, creando asi una base sólida para la medición y el crecimiento futuro.
 
 ---
 
@@ -56,14 +56,14 @@ Podemos seguir un "hilo dorado" desde el negocio hasta la infraestructura para d
 
 ### Decisiones Clave de Arquitectura
 
-1.  **Decisión:** Adoptar **Power Platform (Low-Code)** en lugar de Pro-Code (Java/React) para el MVP.
+1.  **Decisión:** Adoptar **Power Platform (Low-Code)** en lugar de Pro-Code (Java/React) para el producto.
     * **Justificación:** Esta decisión responde a la necesidad de agilidad y al presupuesto indefinido. Permite aprovechar las licencias de M365 existentes (costo cero de despliegue), elimina la gestión de infraestructura y acelera radicalmente el tiempo de desarrollo.
 
 2.  **Decisión:** Usar **Dataverse for Teams** como base de datos.
     * **Justificación:** El cliente prioriza el uso del ecosistema Microsoft. Sin embargo, Dataverse for Teams es una opción técnicamente superior a SharePoint para una aplicación transaccional, ya que ofrece un modelo de datos relacional, seguro y auditable. Sus límites (2GB/1M filas) son más que suficientes para las proyecciones de 150 usuarios/día del CAF, y cumple el requisito de costo cero.
 
-3.  **Decisión:** Desplegar en **Microsoft Teams** en lugar de la App Unisabana para el MVP.
-    * **Justificación:** La integración con la App Unisabana es una restricción clave, pero también una dependencia externa que añade riesgo a un MVP. Nuestra arquitectura *cumple* con la restricción de SSO al usar `Azure AD`, y el despliegue en Teams nos da control total sobre el ciclo de vida del desarrollo. La integración con la App Unisabana se planifica como una Fase 2.
+3.  **Decisión:** Desplegar en **Microsoft Teams** en lugar de la App Unisabana para el producto.
+    * **Justificación:** La integración con la App Unisabana es una restricción clave, pero también una dependencia externa que añade riesgo a un producto. Nuestra arquitectura *cumple* con la restricción de SSO al usar `Azure AD`, y el despliegue en Teams nos da control total sobre el ciclo de vida del desarrollo. La integración con la App Unisabana se planifica como una Fase 2.
 
 ---
 
