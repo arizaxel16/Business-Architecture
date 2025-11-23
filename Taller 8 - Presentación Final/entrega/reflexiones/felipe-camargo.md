@@ -1,0 +1,2 @@
+# Reflexión: Andrés Felipe Camargo
+"Me centré mucho en la experiencia del usuario y cómo la arquitectura la habilita. Diseñar el flujo TO-BE me hizo darme cuenta de que la tecnología debe servir al proceso humano, y no al revés. La integración de las vistas (Negocio, Aplicación, Infraestructura) fue reveladora; ver cómo una decisión en la capa de datos impacta directamente en la interfaz de la App fue un gran aprendizaje. Este proyecto me dio las herramientas para argumentar decisiones técnicas con justificaciones de negocio sólidas."
