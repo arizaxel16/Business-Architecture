@@ -1,0 +1,2 @@
+# Reflexión: Juan Pablo Corral
+"Este curso cambió mi perspectiva sobre cómo conectar el negocio con la tecnología. Antes veía los diagramas BPMN y las matrices de riesgos como burocracia; ahora entiendo que son el mapa que evita que nos perdamos. La parte más desafiante fue traducir los 'dolores' subjetivos del cliente (filas, desorden) en componentes técnicos objetivos (Dataverse, Azure AD). Me llevo la lección de que una buena arquitectura es aquella que es invisible para el usuario, pero robusta para el negocio."
